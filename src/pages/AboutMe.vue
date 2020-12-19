@@ -3,7 +3,7 @@
     <!-- Author intro -->
     <Author :show-title="true" />
 
-    <div class="post-card content-box" style="padding-top: 1rem;">
+    <div class="post-card content-box">
         <div class="post-card__content">
             <h2 class="post-card__title">Tentang Saya</h2>
             <p class="post-card__description">
