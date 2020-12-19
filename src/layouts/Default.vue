@@ -10,11 +10,11 @@
         <ToggleTheme />
       </div>
     </header>
-
-    <main class="main">
-      <slot/>
-    </main>
-
+        <transition name="fade" appear>
+          <main class="main">
+            <slot/>
+          </main>
+      </transition>
     <footer class="footer">
       <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
       <!-- <span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span> -->
@@ -82,4 +82,13 @@ export default {
     color: currentColor;
   }
 }
+
+.fade-enter-active {
+  transition: opacity .5s;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
 </style>
