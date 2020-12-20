@@ -1,7 +1,7 @@
 ---
 title: Getting Started With PostgreSQL
 date: 2020-12-20
-published: true
+published: false
 tags: ['SQL', 'PostgreSQL']
 series: false
 cover_image: https://miro.medium.com/max/800/1*PY24xlr4TpOkXW04HUoqrQ.jpeg
