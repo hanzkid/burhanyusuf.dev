@@ -20,12 +20,14 @@
         <PostTags :post="$page.post" />
       </div>
     </div>
+    
 
     <div class="post-comments">
       <!-- Add comment widgets here -->
+      <Disqus shortname="burhanyusuf" :identifier="$page.post.title" />
     </div>
-
     <Author class="post-author" />
+
   </Layout>
 </template>
 
@@ -119,7 +121,8 @@ query Post ($id: ID!) {
 
 .post-comments {
   padding: calc(var(--space) / 2);
-
+  margin: 0 auto;
+  max-width: var(--content-width);
   &:empty {
     display: none;
   }
